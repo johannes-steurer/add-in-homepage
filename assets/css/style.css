@@ -184,8 +184,9 @@ section { padding-block: 5rem; }
 }
 
 .footer-logo-img {
-  filter: brightness(0) invert(1);
-  opacity: .85;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
 }
 
 .nav-links {
