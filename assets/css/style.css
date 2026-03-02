@@ -176,19 +176,17 @@ section { padding-block: 5rem; }
   flex-shrink: 0;
 }
 
-.logo-icon {
-  width: 48px;
-  height: auto;
+.logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
   flex-shrink: 0;
 }
 
-.logo-text {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--dark);
-  letter-spacing: -.01em;
+.footer-logo-img {
+  filter: brightness(0) invert(1);
+  opacity: .85;
 }
-.logo-text strong { font-weight: 800; }
 
 .nav-links {
   display: flex;
@@ -329,19 +327,11 @@ section { padding-block: 5rem; }
   width: 100%;
 }
 
-.hero-mark {
-  width: 160px;
+.hero-logo-img {
+  width: 220px;
   height: auto;
-  drop-shadow: 0 4px 12px rgba(24,144,200,.25);
+  display: block;
 }
-
-.hero-card-brand {
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--dark);
-  letter-spacing: -.01em;
-}
-.hero-card-brand strong { font-weight: 800; }
 
 .hero-card-sub {
   font-size: .85rem;
@@ -393,17 +383,22 @@ section { padding-block: 5rem; }
 .product-icon {
   width: 48px;
   height: 48px;
+  min-width: 48px;
   background: var(--blue-light);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
   transition: background var(--transition);
 }
 .product-icon svg {
   width: 24px;
   height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  flex-shrink: 0;
   color: var(--blue-dark);
 }
 .product-card:hover .product-icon {
@@ -538,7 +533,11 @@ section { padding-block: 5rem; }
   box-shadow: var(--shadow-blue);
 }
 
-.contact-mark { width: 120px; height: auto; }
+.contact-logo-img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
 
 .contact-card span {
   font-size: 1.2rem;
