@@ -444,6 +444,95 @@ section { padding-block: 5rem; }
 .product-card:hover .product-link { gap: .6rem; }
 
 /* ============================================================
+   Featured products
+   ============================================================ */
+.product-grid-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-card--featured {
+  border-color: var(--blue-mid);
+  background: linear-gradient(150deg, var(--white) 55%, var(--blue-light) 100%);
+}
+
+.product-card--featured:hover {
+  border-color: var(--blue);
+}
+
+.product-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+
+.product-badge {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  background: var(--blue);
+  color: var(--white);
+  padding: .28rem .75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.product-badge--secondary {
+  background: var(--blue-light);
+  color: var(--blue-darker);
+}
+
+.product-features {
+  list-style: none;
+  margin-top: .875rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.product-features li {
+  font-size: .875rem;
+  color: var(--gray);
+  display: flex;
+  align-items: flex-start;
+  gap: .45rem;
+  line-height: 1.5;
+}
+
+.product-features li::before {
+  content: "✓";
+  color: var(--blue);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: .05em;
+}
+
+.product-section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 2rem;
+  color: var(--gray-light);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.product-section-divider::before,
+.product-section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ============================================================
    Features / Why us
    ============================================================ */
 .features-grid {
@@ -658,6 +747,7 @@ section { padding-block: 5rem; }
   .nav-links, .nav-cta { position: fixed; }
 
   .product-grid { grid-template-columns: 1fr; }
+  .product-grid-featured { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr 1fr; }
 }
 
