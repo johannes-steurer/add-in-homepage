@@ -1,65 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add-In Homepage</title>
+  <title>add-in.gmbh – Der Spezialist für Blue Office Add-ins</title>
+  <meta name="description" content="Massgeschneiderte Add-ins und Erweiterungen für Blue Office. Entwickelt in der Schweiz für Schweizer Unternehmen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <span class="logo">Add-In</span>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#screenshots">Screenshots</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo" aria-label="add-in.gmbh – Startseite">
+        <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 3 60 36" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="navGrad" x1="0" y1="3" x2="60" y2="39" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#35BFEE"/>
+              <stop offset="1" stop-color="#1890C8"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="9" width="24" height="24" rx="6" transform="rotate(45,18,21)" fill="url(#navGrad)"/>
+          <rect x="30" y="9" width="24" height="24" rx="6" transform="rotate(45,42,21)" fill="url(#navGrad)"/>
+          <polyline points="20,15 13,21 20,27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="34" y="5" width="3.5" height="3.5" rx="0.7" fill="url(#navGrad)"/>
+          <rect x="39.5" y="5" width="3.5" height="3.5" rx="0.7" fill="url(#navGrad)" opacity="0.5"/>
+        </svg>
+        <span class="logo-text"><strong>add-in</strong>.gmbh</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#produkte">Produkte</a></li>
+        <li><a href="#vorteile">Über uns</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
+
+      <a href="#kontakt" class="btn btn-primary btn-sm nav-cta">Kontakt aufnehmen</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
   <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
     <section id="hero">
-      <h1>Hello World</h1>
-      <p>Welcome to the Add-In homepage. More content coming soon.</p>
-      <a href="#features" class="btn">Learn More</a>
-    </section>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 14.5A6.5 6.5 0 1110 3.5a6.5 6.5 0 010 13z" opacity="0"/></svg>
+            🇨🇭 Swiss Made Software
+          </span>
+          <h1>Der Spezialist für<br /><span class="text-highlight">Blue Office</span><br />Add-ins</h1>
+          <p class="hero-lead">
+            Wir entwickeln massgeschneiderte Erweiterungen für Blue Office –
+            präzise auf Ihre Geschäftsprozesse abgestimmt und direkt einsatzbereit.
+          </p>
+          <div class="hero-actions">
+            <a href="#produkte" class="btn btn-primary">Produkte entdecken</a>
+            <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              Entwickelt in der Schweiz
+            </div>
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Native Blue Office Integration
+            </div>
+            <div class="trust-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Persönlicher Support
+            </div>
+          </div>
+        </div>
 
-    <section id="features">
-      <h2>Features</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h3>Feature One</h3>
-          <p>Placeholder description for feature one.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Feature Two</h3>
-          <p>Placeholder description for feature two.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Feature Three</h3>
-          <p>Placeholder description for feature three.</p>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <svg class="hero-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 3 60 36" fill="none">
+              <defs>
+                <linearGradient id="heroGrad" x1="0" y1="3" x2="60" y2="39" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#35BFEE"/>
+                  <stop offset="1" stop-color="#1890C8"/>
+                </linearGradient>
+              </defs>
+              <rect x="6" y="9" width="24" height="24" rx="6" transform="rotate(45,18,21)" fill="url(#heroGrad)"/>
+              <rect x="30" y="9" width="24" height="24" rx="6" transform="rotate(45,42,21)" fill="url(#heroGrad)"/>
+              <polyline points="20,15 13,21 20,27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="34" y="5" width="3.5" height="3.5" rx="0.7" fill="url(#heroGrad)"/>
+              <rect x="39.5" y="5" width="3.5" height="3.5" rx="0.7" fill="url(#heroGrad)" opacity="0.5"/>
+            </svg>
+            <p class="hero-card-brand"><strong>add-in</strong>.gmbh</p>
+            <p class="hero-card-sub">Blue Office Add-in Experten</p>
+          </div>
+          <div class="hero-bg-blob" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
-    <section id="screenshots">
-      <h2>Screenshots</h2>
-      <div class="screenshot-grid">
-        <!-- Images will go here -->
-        <img src="assets/images/screenshot-1.png" alt="Screenshot 1" />
-        <img src="assets/images/screenshot-2.png" alt="Screenshot 2" />
+    <!-- ============================================================
+         PRODUCTS
+         ============================================================ -->
+    <section id="produkte">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Unsere Lösungen</span>
+          <h2>Add-ins für jeden Prozess</h2>
+          <p>Jedes Add-in ist nativ in Blue Office integriert und erweitert Ihre bestehende Installation ohne zusätzliche Komplexität.</p>
+        </div>
+
+        <div class="product-grid">
+
+          <a href="/zeterminal" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>ZeTerminal</h3>
+              <p class="product-category">Zeit &amp; Präsenz</p>
+              <p>Webbasiertes Zeiterfassungs-Terminal für Blue Office. Mitarbeitende melden sich einfach und sicher an und ab – direkt in Ihr Blue Office übertragen.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="/blueofficego" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>Blue Office Go</h3>
+              <p class="product-category">Mobile</p>
+              <p>Blue Office immer dabei. Greifen Sie von Ihrem Smartphone oder Tablet auf Ihre Blue Office Daten zu – unkompliziert und sicher von überall.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="/listenadd-in" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>Listen Add-In</h3>
+              <p class="product-category">Datenverwaltung</p>
+              <p>Leistungsstarke und flexible Listenverwaltung direkt in Blue Office. Mehr Übersicht und Kontrolle bei der täglichen Datenverarbeitung.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="/abacuslohn" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>Abacus Lohn</h3>
+              <p class="product-category">Lohnbuchhaltung</p>
+              <p>Nahtloser Datenexport von der Blue Office Zeiterfassung in die Abacus Lohnbuchhaltung. Spart Zeit und eliminiert manuelle Übertragungsfehler.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="/rapidmail" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>RapidMail</h3>
+              <p class="product-category">E-Mail Marketing</p>
+              <p>Direkte Integration von Blue Office mit RapidMail. Verwalten Sie Ihre Newsletter-Kampagnen und Kundenkommunikation direkt aus dem ERP heraus.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="/scan" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7V4h3M17 4h3v3M4 17v3h3m10 0h3v-3M3 12h2m14 0h2M12 3v2m0 14v2"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>Scan</h3>
+              <p class="product-category">Dokumentenerfassung</p>
+              <p>Intelligente Scan-Lösung für Blue Office. Dokumente und Belege direkt erfassen und automatisch dem richtigen Vorgang zuordnen.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a href="/pocketreadmini" class="product-card">
+            <div class="product-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/></svg>
+            </div>
+            <div class="product-body">
+              <h3>PocketRead Mini</h3>
+              <p class="product-category">Barcode &amp; Scanner</p>
+              <p>Kompakter mobiler Barcode-Leser für die schnelle Erfassung von Artikel- und Lagerdaten. Direkte Übertragung in Blue Office.</p>
+            </div>
+            <span class="product-link">Mehr erfahren <span aria-hidden="true">→</span></span>
+          </a>
+
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Questions or feedback? Reach out at <a href="mailto:placeholder@example.com">placeholder@example.com</a>.</p>
+    <!-- ============================================================
+         WHY US
+         ============================================================ -->
+    <section id="vorteile" class="section-tinted">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Warum add-in.gmbh?</span>
+          <h2>Tiefe Expertise.<br />Direkte Lösungen.</h2>
+          <p>Als spezialisiertes Blue Office Softwarehaus bringen wir echtes Know-how in jedes Projekt.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+            </div>
+            <h3>Blue Office Expertise</h3>
+            <p>Wir sind seit Jahren ausschliesslich auf Blue Office spezialisiert. Dieses Tiefenwissen fliesst in jedes unserer Add-ins ein.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/></svg>
+            </div>
+            <h3>Schweizer Qualität</h3>
+            <p>Entwickelt und gewartet in der Schweiz. Kurze Kommunikationswege, persönlicher Ansprechpartner und Schweizer Datenschutzstandards.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+            </div>
+            <h3>Nahtlose Integration</h3>
+            <p>Unsere Add-ins fügen sich nativ in Blue Office ein. Keine Parallelwelten, keine Schnittstellenprobleme – alles aus einem Guss.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <h3>Verlässlicher Support</h3>
+            <p>Bei Fragen und Problemen sind wir direkt für Sie da. Schnelle Reaktionszeiten und echte Lösungen – nicht nur Ticketnummern.</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="kontakt">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-text">
+            <span class="section-label">Kontakt</span>
+            <h2>Bereit für Ihr<br />nächstes Add-in?</h2>
+            <p>Nehmen Sie Kontakt mit uns auf. Wir beraten Sie gerne zu unseren bestehenden Produkten oder entwickeln mit Ihnen gemeinsam eine massgeschneiderte Lösung.</p>
+            <a href="mailto:info@add-in.gmbh" class="btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              info@add-in.gmbh
+            </a>
+          </div>
+          <div class="contact-card" aria-hidden="true">
+            <svg class="contact-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 3 60 36" fill="none">
+              <defs>
+                <linearGradient id="ctaGrad" x1="0" y1="3" x2="60" y2="39" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#35BFEE"/>
+                  <stop offset="1" stop-color="#1890C8"/>
+                </linearGradient>
+              </defs>
+              <rect x="6" y="9" width="24" height="24" rx="6" transform="rotate(45,18,21)" fill="url(#ctaGrad)"/>
+              <rect x="30" y="9" width="24" height="24" rx="6" transform="rotate(45,42,21)" fill="url(#ctaGrad)"/>
+              <polyline points="20,15 13,21 20,27" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="34" y="5" width="3.5" height="3.5" rx="0.7" fill="url(#ctaGrad)"/>
+              <rect x="39.5" y="5" width="3.5" height="3.5" rx="0.7" fill="url(#ctaGrad)" opacity="0.5"/>
+            </svg>
+            <span><strong>add-in</strong>.gmbh</span>
+            <span class="contact-country">🇨🇭 Schweiz</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2026 Add-In. All rights reserved.</p>
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <a href="#" class="footer-logo" aria-label="add-in.gmbh">
+        <svg class="logo-icon logo-icon--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 3 60 36" fill="none" aria-hidden="true">
+          <rect x="6" y="9" width="24" height="24" rx="6" transform="rotate(45,18,21)" fill="white" opacity="0.9"/>
+          <rect x="30" y="9" width="24" height="24" rx="6" transform="rotate(45,42,21)" fill="white" opacity="0.75"/>
+          <polyline points="20,15 13,21 20,27" stroke="#1890C8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="34" y="5" width="3.5" height="3.5" rx="0.7" fill="white" opacity="0.9"/>
+          <rect x="39.5" y="5" width="3.5" height="3.5" rx="0.7" fill="white" opacity="0.5"/>
+        </svg>
+        <span class="logo-text"><strong>add-in</strong>.gmbh</span>
+      </a>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="/zeterminal">ZeTerminal</a>
+        <a href="/blueofficego">Blue Office Go</a>
+        <a href="/listenadd-in">Listen Add-In</a>
+        <a href="/abacuslohn">Abacus Lohn</a>
+        <a href="/rapidmail">RapidMail</a>
+        <a href="/scan">Scan</a>
+        <a href="/pocketreadmini">PocketRead Mini</a>
+      </nav>
+
+      <p class="footer-copy">&copy; 2026 add-in.gmbh · Alle Rechte vorbehalten · 🇨🇭 Schweiz</p>
+    </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
