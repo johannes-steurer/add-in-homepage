@@ -30,7 +30,7 @@
   --shadow-blue:   0 8px 32px rgba(43,170,225,.18);
 
   --nav-h:         68px;
-  --max-w:         1440px;
+  --max-w:         none;
   --transition:    0.22s ease;
 }
 
