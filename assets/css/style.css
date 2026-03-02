@@ -30,7 +30,7 @@
   --shadow-blue:   0 8px 32px rgba(43,170,225,.18);
 
   --nav-h:         68px;
-  --max-w:         1120px;
+  --max-w:         1440px;
   --transition:    0.22s ease;
 }
 
@@ -64,7 +64,7 @@ ul { list-style: none; }
   width: 100%;
   max-width: var(--max-w);
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-inline: clamp(1.5rem, 4vw, 4rem);
 }
 
 section { padding-block: 5rem; }
